@@ -18,3 +18,8 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+
+input:focus-visible{
+  outline:unset;
+}
+

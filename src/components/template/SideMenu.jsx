@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const SideMenu = () => {
@@ -11,7 +12,8 @@ const SideMenu = () => {
                 </div>
 
                 <ul className="w-full px-5">
-                    <li className="bg-white py-1 px-2 font-semibold rounded hover:bg-yellow-400 hover:cursor-pointer ">link</li>
+                    <li className="bg-white py-1 px-2 mb-3 font-semibold rounded hover:bg-yellow-400 hover:cursor-pointer "><Link to="/">All Bookin List</Link></li>
+                    <li className="bg-white py-1 px-2 font-semibold rounded hover:bg-yellow-400 hover:cursor-pointer "><Link to="/clientdetail">Client Detail </Link></li>
                 </ul>
             </div>
         </>

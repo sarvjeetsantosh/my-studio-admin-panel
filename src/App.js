@@ -1,9 +1,12 @@
 import React from "react";
 import SideMenu from "./components/template/SideMenu";
 import TopMenus from "./components/template/TopMenu";
+import BookingList from "./components/pages/BookingList";
+import ClientDetail from "./components/pages/ClientDetail";
+import UpdateProfile from "./components/pages/ProfileUpdate";
+
 
 import { Routes, Route } from "react-router-dom";
-
 
 
 function App() {
@@ -17,9 +20,9 @@ function App() {
           <TopMenus />
 
           <Routes>
-            <Route path="/" element={<h1>Home Page</h1>} />
-            <Route path="/" element={<h1>about</h1>} />
-            <Route path="/" element={<h1>contact</h1>} />
+            <Route path="/" element={<BookingList />} />
+            <Route path="/clientdetail" element={<ClientDetail />} />
+            <Route path="/updateprofile" element={<UpdateProfile />} />
           </Routes>
 
         </div>
